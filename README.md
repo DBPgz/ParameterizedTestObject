@@ -1,7 +1,7 @@
 Using Parameterized Test Object on the fly
 ==========================================
 
-## What is this?
+## What is this repository?
 
 This is a small [Katalon Studio](https://www.katalon.com/) project for demonstration purpose. You can clone this project out onto your pc
 and run it with your Katalon Studio.
@@ -14,26 +14,24 @@ The original question raised was:
 Can I just create new test object in memory?
 >https://forum.katalon.com/discussion/comment/17177#Comment_17177
 
-## Background
+## Problem to solve
 
-This project demonstrates how to create a parameterized Test Object without using the Object Repository at all.
+Let's imagine you have a target Web page which contains a menu with 20 `<ul>` elements each of which contains 10 `<li><a href="..">label</a></li>`. You want to verify the label texts against some expected data. You will use Katalon Studio to do the test.
 
-What is the reason why I developed this demo?
+Katalon's documents would suggest to you to create a set of Test Objects in the Object Repository using the Spy Object. However, nobody wants to  create 20 * 10 = 200 entries in the Object Repository with the Spy Object tool.
 
-Please imagine we have a target Web page which contains a menu with 20 `<ul>` elements each of which contains 10 `<li><a href="..">label</a></li>`, and you want to verify the label texts against the data (read from inline, csv or database et). We are going to use Katalon Studio to do the test.
-
-Katalon's tutorial documents would suggest to you to create a set of Test Objects in the Object Repository using the Spy Object.
-
-However, creating 20 * 10 = 200 entries with the Spy Object is a miserable job. Nobody wants to do it.
-
-Some of the Katalon enthusiasts in the forum discusses various ways of accessing HTML DOM with using Test Objects
-- https://forum.katalon.com/discussion/5852/using-waitforelementpresent-without-an-object
+## My solution
 
 This demo shows you how to:
 
 1. create a Test Object instance on the fly without storing it into the Object repository
 2. reuse the Test Object instance multiple times to get access to multiple DOM elements in the target
 3. make the selector of the Test Object parameterized --- how to interpolate the place holder `${index}` in the selector expression with concrete values 1,2,3
+
+This project demonstrates how to create a parameterized Test Object without using the Object Repository at all.
+
+I was inspired by the discussion by Katalon enthusiasts in the Katalon forum:
+- [Katalon Forum/Using waitForElementPresent without an object]( https://forum.katalon.com/discussion/5852/using-waitforelementpresent-without-an-object)
 
 ## How to run the demo
 
@@ -49,10 +47,10 @@ This demo shows you how to:
 ## Description
 
 All you need to know is written in the Test Case code. Please read the source at
-- https://github.com/kazurayam/UsingParameterizedTestObjectOnTheFly/blob/master/Scripts/TC1/Script1529021746181.groovy
+- [./Scripts/TC1](https://github.com/kazurayam/UsingParameterizedTestObjectOnTheFly/blob/master/Scripts/TC1/Script1529021746181.groovy)
 
-I was surprised to find how easily I could create a test case without using the Object Repository (and Spy Web) at all.
+I was surprised to find how easy it is to create a test case without using the Object Repository (and Spy Web) at all provided that a tester has sound knowledge of XPath or CSS selector.
 
 ## Thanks
 
-Thanks to http://automationpractice.com/index.php? as I used it as testbed.
+I used http://automationpractice.com/index.php as testbed. Many thanks.
