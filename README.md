@@ -18,7 +18,7 @@ Can I just create new test object in memory?
 
 Let's imagine you have a target Web page which contains a menu with 20 `<ul>` elements each of which contains 10 `<li><a href="..">label</a></li>`. You want to verify the label texts against some expected data. You will use Katalon Studio to do the test.
 
-Katalon's documents would suggest to you to create a set of Test Objects in the Object Repository using the Spy Object. However, nobody wants to  create 20 * 10 = 200 entries in the Object Repository with the Spy Object tool.
+Katalon's documents would suggest to you to create a set of Test Objects in the Object Repository using the Spy Object. However, nobody would like to  create 20 * 10 = 200 entries in the Object Repository with the Spy Object tool.
 
 ## My solution
 
