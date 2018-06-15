@@ -28,7 +28,7 @@ This demo shows you how to:
 2. reuse the Test Object instance multiple times to get access to multiple elements in the target Web page
 3. make the selector of the Test Object parameterized --- how to interpolate the place holder `${index}` in the selector expression with concrete values: 1,2,3...,10
 
-This project demonstrates how to create a parameterized Test Object without using the Object Repository at all.
+I would call this method *Parameterized Test Object on the fly*. This method works well. Provided that a tester has sound knowledge of XPath or CSS selector, this method is easy to implement.
 
 I was inspired by the discussion by Katalon enthusiasts in the Katalon forum:
 - [Katalon Forum/Using waitForElementPresent without an object]( https://forum.katalon.com/discussion/5852/using-waitforelementpresent-without-an-object)
@@ -46,10 +46,9 @@ I was inspired by the discussion by Katalon enthusiasts in the Katalon forum:
 
 ## Description
 
-All you need to know is written in the Test Case code. Please read the source at
+Have a look at the Test Case source. It would explain everything.
 - [./Scripts/TC1](https://github.com/kazurayam/UsingParameterizedTestObjectOnTheFly/blob/master/Scripts/TC1/Script1529021746181.groovy)
 
-I was surprised to find how easy it is to create a test case without using the Object Repository (and Spy Web) at all provided that a tester has sound knowledge of XPath or CSS selector.
 
 ## Thanks
 
