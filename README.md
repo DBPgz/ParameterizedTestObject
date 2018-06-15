@@ -41,9 +41,10 @@ This demo shows you how to:
 2. start your Katalon Studio
 3. open the project 'UsingParameterizedTestObjectOnTheFly'
 4. load the Test Case 'TC1'
-5. run the Test Case
-6. the test case executes a series of verification, the last of which will intensionally fail.
-7. please read the Log View of Katalon Studio to see what happened
+5. run the Test Case.
+6. the test case executes a series of verification on a target Web page  ![http://automationpractice.com/](https://github.com/kazurayam/UsingParameterizedTestObjectOnTheFly/blob/master/resources/WOMEN_DRESS_T-SHIRTS.png)
+7. The last verification fails  intensionally.
+8. please read the Log View of Katalon Studio to see what happened
 
 ## Description
 
