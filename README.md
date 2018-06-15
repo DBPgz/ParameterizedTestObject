@@ -14,6 +14,8 @@ The original question raised was:
 Can I just create new test object in memory?
 >https://forum.katalon.com/discussion/comment/17177#Comment_17177
 
+## Background
+
 This project demonstrates how to create a parameterized Test Object without using the Object Repository at all.
 
 What is the reason why I developed this demo?
