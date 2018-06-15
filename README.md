@@ -16,7 +16,7 @@ Can I just create new test object in memory?
 
 This project demonstrates how to create a parameterized Test Object without using the Object Repository at all.
 
-## How valuable is this?
+What is the reason why I developed this demo?
 
 Please imagine we have a target Web page which contains a menu with 20 `<ul>` elements each of which contains 10 `<li><a href="..">label</a></li>`, and you want to verify the label texts against the data (read from inline, csv or database et). We are going to use Katalon Studio to do the test.
 
@@ -31,7 +31,7 @@ This demo shows you how to:
 
 1. create a Test Object instance on the fly without storing it into the Object repository
 2. reuse the Test Object instance multiple times to get access to multiple DOM elements in the target
-3. make the selector of the Test Object parameterized --- how to interpolate the place holder `${index}` in the selector expression with concrete values 1,2,3 
+3. make the selector of the Test Object parameterized --- how to interpolate the place holder `${index}` in the selector expression with concrete values 1,2,3
 
 ## How to run the demo
 
@@ -47,6 +47,8 @@ This demo shows you how to:
 
 All you need to know is written in the Test Case code. Please read the source at
 - https://github.com/kazurayam/UsingParameterizedTestObjectOnTheFly/blob/master/Scripts/TC1/Script1529021746181.groovy
+
+I was surprised to find how easily I could create a test case without using the Object Repository (and Spy Web) at all.
 
 ## Thanks
 
