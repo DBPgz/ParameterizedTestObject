@@ -24,9 +24,9 @@ Katalon's documents would suggest to you to create a set of Test Objects in the 
 
 This demo shows you how to:
 
-1. create a Test Object instance on the fly without storing it into the Object repository
-2. reuse the Test Object instance multiple times to get access to multiple DOM elements in the target
-3. make the selector of the Test Object parameterized --- how to interpolate the place holder `${index}` in the selector expression with concrete values 1,2,3
+1. create a Test Object instance on the fly without storing it into the Object Repository
+2. reuse the Test Object instance multiple times to get access to multiple elements in the target Web page
+3. make the selector of the Test Object parameterized --- how to interpolate the place holder `${index}` in the selector expression with concrete values: 1,2,3...,10
 
 This project demonstrates how to create a parameterized Test Object without using the Object Repository at all.
 
