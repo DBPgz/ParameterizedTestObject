@@ -49,8 +49,8 @@ String template = '//div[@id="block_top_menu"]/ul/li[${index}]/a'
 TestObject blockTopMenu = new TestObject('block_top_menu')
 for (int i = 0; i < expected.size(); i++) {
 	String expr = engine.createTemplate(template).make(['index':i+1]).toString()
-	WebUI.comment("expr=${expr}")
 	blockTopMenu.addProperty('xpath', ConditionType.EQUALS, expr)
+	WebUI.comment("xpath=${blockTopMenu.findPropertyValue('xpath')}")
 	String text = WebUI.getText(blockTopMenu, FailureHandling.STOP_ON_FAILURE)
 	WebUI.comment("text=${text}")
 	// check if displayed as expected
